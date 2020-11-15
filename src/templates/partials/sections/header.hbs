@@ -1,0 +1,1744 @@
+<div class="search-drawer position-fixed">
+    <form action="search" method="GET" role="search" class="search-bar">
+        <div class="search-bar-table">
+            <input type="text" value="" placeholder="Search..." aria-label="Search..." class="search-bar_input">
+            <i class="fas fa-search"></i>
+        </div>
+    </form>
+
+    <div class="search-bar_exit">
+        <i class="fas fa-times"></i>
+    </div>
+</div>
+
+<div class="main-menu d-flex flex-column position-fixed">
+    <div class="m-close-side w-100">
+        <div class="close">
+            <i class="fas fa-times"></i>
+        </div>
+    </div>
+
+    <div class="m-list w-100">
+        <ul class="menu-list-parent text-left w-100">
+            <li class="menu-list-child">
+                <a href="/build/index.html">
+                    Home
+                </a>
+            </li>
+
+            <li id="collection" class="menu-list-child">
+                Collection
+                <i class="fas fa-angle-right"></i>
+            </li>
+
+            <li id="shop" class="menu-list-child">
+                Shop
+                <i class="fas fa-angle-right"></i>
+            </li>
+
+            <li id="coffee" class="menu-list-child">
+                Coffee
+                <i class="fas fa-angle-right"></i>
+            </li>
+
+            <li id="chatfood" class="menu-list-child">
+                Chat Food
+                <i class="fas fa-angle-right"></i>
+            </li>
+
+            <li id="snackes" class="menu-list-child">
+                Snackes
+                <i class="fas fa-angle-right"></i>
+            </li>
+
+            <li id="pages" class="menu-list-child">
+                Pages
+                <i class="fas fa-angle-right"></i>
+            </li>
+
+        </ul>
+    </div>
+
+    {{!-- Collection --}}
+    <div id="collection-menu" class="list_menu position-absolute w-100">
+        <div class="m-list w-100">
+            <ul class="menu-list-parent text-left w-100">
+                <li class="menu-list-head text-center">
+                    <i id="list_exit" class="fas fa-angle-left"></i>
+                    Collection
+                </li>
+
+                <li class="menu-list-child">
+                    Pizza
+                    <i class="fas fa-angle-right"></i>
+                </li>
+
+                <li class="menu-list-child">
+                    Sandwich
+                    <i class="fas fa-angle-right"></i>
+                </li>
+
+                <li class="menu-list-child">
+                    Chat Itmes
+                    <i class="fas fa-angle-right"></i>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    {{!-- Shop --}}
+    <div id="shop-menu" class="list_menu position-absolute w-100">
+        <div class="m-list w-100">
+            <ul class="menu-list-parent text-left w-100">
+                <li class="menu-list-head text-center">
+                    <i id="list_exit" class="fas fa-angle-left"></i>
+                    Shop
+                </li>
+
+                <li class="menu-list-child">
+                    Kathi Roll
+                    <i class="fas fa-angle-right"></i>
+                </li>
+
+                <li class="menu-list-child">
+                    Sandwich
+                    <i class="fas fa-angle-right"></i>
+                </li>
+
+                <li class="menu-list-child">
+                    Pizza
+                    <i class="fas fa-angle-right"></i>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    {{!-- Coffee--}}
+    <div id="coffee-menu" class="list_menu position-absolute w-100">
+        <div class="m-list w-100">
+            <ul class="menu-list-parent text-left w-100">
+                <li class="menu-list-head text-center">
+                    <i id="list_exit" class="fas fa-angle-left"></i>
+                    Coffee
+                </li>
+
+                <li class="menu-list-child">
+                    Cappuccino
+                    <i class="fas fa-angle-right"></i>
+                </li>
+
+                <li class="menu-list-child">
+                    Cool Coffee
+                    <i class="fas fa-angle-right"></i>
+                </li>
+
+                <li class="menu-list-child">
+                    Espresso
+                    <i class="fas fa-angle-right"></i>
+                </li>
+
+                <li class="menu-list-child">
+                    Indian
+                    <i class="fas fa-angle-right"></i>
+                </li>
+
+                <li class="menu-list-child">
+                    Milk Shake
+                    <i class="fas fa-angle-right"></i>
+                </li>
+
+                <li class="menu-list-child">
+                    Beverages
+                    <i class="fas fa-angle-right"></i>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    {{!-- Chat Food--}}
+    <div id="chatfood-menu" class="list_menu position-absolute w-100">
+        <div class="m-list w-100">
+            <ul class="menu-list-parent text-left w-100">
+                <li class="menu-list-head text-center">
+                    <i id="list_exit" class="fas fa-angle-left"></i>
+                    Chat Food
+                </li>
+
+                <li class="menu-list-child">
+                    Salads
+                    <i class="fas fa-angle-right"></i>
+                </li>
+
+                <li class="menu-list-child">
+                    Chat Items
+                    <i class="fas fa-angle-right"></i>
+                </li>
+
+                <li class="menu-list-child">
+                    Burger
+                    <i class="fas fa-angle-right"></i>
+                </li>
+
+                <li class="menu-list-child">
+                    Pizza
+                    <i class="fas fa-angle-right"></i>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    {{!-- Snackes --}}
+    <div id="snackes-menu" class="list_menu position-absolute w-100">
+        <div class="m-list w-100">
+            <ul class="menu-list-parent text-left w-100">
+                <li class="menu-list-head text-center">
+                    <i id="list_exit" class="fas fa-angle-left"></i>
+                    Snackes
+                </li>
+
+                <li class="menu-list-child">
+                    Fruits Bites
+                    <i class="fas fa-angle-right"></i>
+                </li>
+
+                <li class="menu-list-child">
+                    Mixture
+                    <i class="fas fa-angle-right"></i>
+                </li>
+
+                <li class="menu-list-child">
+                    Ice cream
+                    <i class="fas fa-angle-right"></i>
+                </li>
+
+                <li class="menu-list-child">
+                    Biscuit
+                    <i class="fas fa-angle-right"></i>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    {{!-- Pages --}}
+    <div id="pages-menu" class="list_menu position-absolute w-100">
+        <div class="m-list w-100">
+            <ul class="menu-list-parent text-left w-100">
+                <li class="menu-list-head text-center">
+                    <i id="list_exit" class="fas fa-angle-left"></i>
+                    Pages
+                </li>
+
+                <li class="menu-list-child">
+                    <a href="#">
+                        About Us
+                    </a>
+                </li>
+
+                <li class="menu-list-child">
+                    <a href="#">
+                        Contact Us
+                    </a>
+                </li>
+
+                <li class="menu-list-child">
+                    <a href="#">
+                        Blog
+                    </a>
+                </li>
+
+                <li class="menu-list-child">
+                    <a href="#">
+                        Faq's
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<header id="header-landing" class="w-100">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xl-2 col-md-2 col-sm-12">
+                <div class="logo d-flex justify-content-center align-items-center w-100">
+                    <a href="#">
+                        <img src="/src/static/assets/logo.png" alt="logo">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-7 m-bar-side">
+                <div class="menu-bar d-flex justify-content-center align-items-center w-100">
+                    <ul class="site-nav d-flex justify-content-center align-items-center">
+                        <li class="mega-menu">
+                            <a class="menu-child" href="/build/index.html" style="color: #be9c79;">Home</a>
+                        </li>
+
+                        <li class="mega-menu">
+                            <a class="menu-child" href="#">Collection
+                                <i class="fas fa-caret-down"></i>
+                            </a>
+
+                            <div class="side-nav-dropdown">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-7 d-flex">
+                                            <div class="col-xs-12 col-sm-4">
+                                                <div class="inner w-100">
+                                                    <a class="list-name" href="#">
+                                                        Pizza
+                                                    </a>
+
+                                                    <ul class="dropdown mt-3">
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Margherita
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Quattro Stagioli
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Meatball
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                BBQ Chicken
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Onion-Ricotta
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Bacon-Egg
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Potato-Resomary
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Salad
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Catuai Bean
+                                                            </a>
+
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-4">
+                                                <div class="inner w-100">
+                                                    <a class="list-name" href="#">
+                                                        Sandwich
+                                                    </a>
+
+                                                    <ul class="dropdown mt-3">
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Vegetable
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Toasted Chicken
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Eggy Bread
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Open Beetrot
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Peas And Potato
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Leftover Chicken
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Paneer Toasty
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Roasted Broccoli
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Frappe Bean
+                                                            </a>
+
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-4">
+                                                <div class="inner w-100">
+                                                    <a class="list-name" href="#">
+                                                        Chat Items
+                                                    </a>
+
+                                                    <ul class="dropdown mt-3">
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Pani Puri
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Dahi Bihalla
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Bhel Puri
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Samosa Cheep
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Sev Puri
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Aloo Chana
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Ragda Patties
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Dahi Vada
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Jamber Coffee
+                                                            </a>
+
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-5">
+                                            <div class="dropdown-image">
+                                                <a href="#">
+                                                    <img src="/src/static/assets/mega-menu.jpg" alt="mega-menu">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="mega-menu">
+                            <a class="menu-child" href="#">Shop
+                                <i class="fas fa-caret-down"></i>
+                            </a>
+
+                            <div class="side-nav-dropdown">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-7 d-flex">
+
+                                            <div class="col-xs-12 col-sm-4">
+                                                <div class="inner w-100">
+                                                    <a class="list-name" href="#">
+                                                        Kathi Roll
+                                                    </a>
+
+                                                    <ul class="dropdown mt-3">
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Aloo Roll
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Mix veg
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Paneer
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Egg Roll
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Egg Aloo
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Chicken Single
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Chicken Double
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Classic Powder
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Geisha Bean
+                                                            </a>
+
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-4">
+                                                <div class="inner w-100">
+                                                    <a class="list-name" href="#">
+                                                        Sandwich
+                                                    </a>
+
+                                                    <ul class="dropdown mt-3">
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Bread Butter
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Veg Grilled
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Veg cheese
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Potato Cheese
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Garlic Cheese
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Bun Maska
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Jam Sandwich
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Catuai Coffee
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Frappe Bean
+                                                            </a>
+
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-4">
+                                                <div class="inner w-100">
+                                                    <a class="list-name" href="#">
+                                                        Pizza
+                                                    </a>
+
+                                                    <ul class="dropdown mt-3">
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Veg cheese
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Paneer Corn
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Mashroom Paneer
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Spicy Paneer
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Spicy Chicken
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Bar b Que
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Corn Capsicum
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Gold Blend
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Kapeng Barako
+                                                            </a>
+
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+
+                                        <div class="col-2">
+                                            <div class="dropdown-image d-flex flex-column">
+                                                <a href="#">
+                                                    <img style="max-width: 100%"
+                                                        src="/src/static/assets/product28_large.jpg" alt="">
+                                                </a>
+
+                                                <div
+                                                    class="image-info d-flex flex-column justify-content-end align-items-center">
+                                                    <a href="#">Bourboon Coffee Bean</a>
+                                                    <span>£395.66</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-3">
+                                            <div class="dropdown-image">
+                                                <a href="#">
+                                                    <img src="/src/static/assets/mega-menu-1.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="mega-menu">
+                            <a class="menu-child" href="#">Coffee
+                                <i class="fas fa-caret-down"></i>
+                            </a>
+
+                            <div class="side-nav-dropdown">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-7 d-flex flex-wrap">
+
+                                            <div class="col-xs-12 col-sm-4">
+                                                <div class="inner w-100">
+                                                    <a class="list-name" href="#">
+                                                        Cappuccino
+                                                    </a>
+
+                                                    <ul class="dropdown mt-3">
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Toffee Latte
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Iced Latte
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Cafe Mocha
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Coconut
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Arabica Bean
+                                                            </a>
+
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-4">
+                                                <div class="inner w-100">
+                                                    <a class="list-name" href="#">
+                                                        Cool Coffe
+                                                    </a>
+
+                                                    <ul class="dropdown mt-3">
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Affogato
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Americano
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Bicerin
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Cafe Crema
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Bourbon
+                                                            </a>
+
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-4">
+                                                <div class="inner w-100">
+                                                    <a class="list-name" href="#">
+                                                        Espresso
+                                                    </a>
+
+                                                    <ul class="dropdown mt-3">
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Flat White
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Long Black
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Irish Coffee
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Cafe Latte
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Guadeluope
+                                                            </a>
+
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-4 mt-3">
+                                                <div class="inner w-100">
+                                                    <a class="list-name" href="#">
+                                                        Indian
+                                                    </a>
+
+                                                    <ul class="dropdown mt-3">
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Original Blend
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Black Coffee
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Allegro
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Folgers Classic
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Kpeng Barako
+                                                            </a>
+
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-4 mt-3">
+                                                <div class="inner w-100">
+                                                    <a class="list-name" href="#">
+                                                        Milk Shake
+                                                    </a>
+
+                                                    <ul class="dropdown mt-3">
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Cold Chocolate
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Rose Milk
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Pineapple
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Strawberry Milk
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Italiya Premix
+                                                            </a>
+
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-4 mt-3">
+                                                <div class="inner w-100">
+                                                    <a class="list-name" href="#">
+                                                        Beverages
+                                                    </a>
+
+                                                    <ul class="dropdown mt-3">
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Tea
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Black Coffee
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Hot Coffee
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Hot Chocolate
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-angle-right"></i>
+                                                            <a href="#">
+                                                                Rofum Roaster
+                                                            </a>
+
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-5 d-flex">
+                                            <div class="col-6">
+                                                <div class="dropdown-image d-flex flex-column">
+                                                    <a href="#">
+                                                        <div class="image-01">
+                                                            <img src="/src/static/assets/mega-menu-2-2.jpg" alt="">
+                                                    </a>
+                                                </div>
+
+                                                <div class="image-02 mt-2">
+                                                    <a href="#">
+                                                        <img src="/src/static/assets/mega-menu-2-1.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <div class="dropdown-image">
+                                                <a href="#">
+                                                    <img src="/src/static/assets/mega-menu-2-3.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+
+                </li>
+
+                <li class="mega-menu">
+                    <a class="menu-child" href="#">Chat Food
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+
+                    <div class="side-nav-dropdown">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 d-flex">
+
+                                    <div class="col-xs-12 col">
+                                        <div class="inner w-100">
+                                            <a class="list-name" href="#">
+                                                Salads
+                                            </a>
+
+                                            <ul class="dropdown mt-3">
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Tomato Peach
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Squash
+                                                    </a>
+
+                                                </li>
+
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Caesar Salad
+                                                    </a>
+
+                                                </li>
+
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Crab-Salad
+                                                    </a>
+
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col">
+                                        <div class="inner w-100">
+                                            <a class="list-name" href="#">
+                                                Chat Items
+                                            </a>
+
+                                            <ul class="dropdown mt-3">
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Dahi Bhalla
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Dahi Vada
+                                                    </a>
+
+                                                </li>
+
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Pana Puri
+                                                    </a>
+
+                                                </li>
+
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Aloo Chana
+                                                    </a>
+
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col">
+                                        <div class="inner w-100">
+                                            <a class="list-name" href="#">
+                                                Burger
+                                            </a>
+
+                                            <ul class="dropdown mt-3">
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Bacon Cheese
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Juicy Luci
+                                                    </a>
+
+                                                </li>
+
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Texas Bean
+                                                    </a>
+
+                                                </li>
+
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Butter
+                                                    </a>
+
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col">
+                                        <div class="inner w-100">
+                                            <a class="list-name" href="#">
+                                                Pizza
+                                            </a>
+
+                                            <ul class="dropdown mt-3">
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Fresh Veggie
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Onion-Ricotta
+                                                    </a>
+
+                                                </li>
+
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Bacon-Egg
+                                                    </a>
+
+                                                </li>
+
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Artichoke
+                                                    </a>
+
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+
+                <li class="mega-menu">
+                    <a class="menu-child" href="#">Snackes
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+
+                    <div class="side-nav-dropdown">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 d-flex">
+
+                                    <div class="col-xs-12 col">
+                                        <div class="inner w-100">
+                                            <a class="list-name" href="#">
+                                                Fruits Bites
+                                            </a>
+
+                                            <ul class="dropdown mt-3">
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Naturo
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Ghasitaram
+                                                    </a>
+
+                                                </li>
+
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Chupa Chups
+                                                    </a>
+
+                                                </li>
+
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Bapuji & Sons
+                                                    </a>
+
+                                                </li>
+
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Lal
+                                                    </a>
+
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col">
+                                        <div class="inner w-100">
+                                            <a class="list-name" href="#">
+                                                Mixture
+                                            </a>
+
+                                            <ul class="dropdown mt-3">
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Nescafe
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Balaji
+                                                    </a>
+
+                                                </li>
+
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Sanjay
+                                                    </a>
+
+                                                </li>
+
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Haldiram
+                                                    </a>
+
+                                                </li>
+
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Haldirams
+                                                    </a>
+
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col">
+                                        <div class="inner w-100">
+                                            <a class="list-name" href="#">
+                                                Ice Cream
+                                            </a>
+
+                                            <ul class="dropdown mt-3">
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Ossoro
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Kwality
+                                                    </a>
+
+                                                </li>
+
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Heritage
+                                                    </a>
+
+                                                </li>
+
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Five Star
+                                                    </a>
+
+                                                </li>
+
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Lekure
+                                                    </a>
+
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col">
+                                        <div class="inner w-100">
+                                            <a class="list-name" href="#">
+                                                Biscuit
+                                            </a>
+
+                                            <ul class="dropdown mt-3">
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Sunfeast
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Cadbury
+                                                    </a>
+
+                                                </li>
+
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Oreo
+                                                    </a>
+
+                                                </li>
+
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Dark Fantasy
+                                                    </a>
+
+                                                </li>
+
+                                                <li>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <a href="#">
+                                                        Pillsbury
+                                                    </a>
+
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-12 d-flex mt-4">
+                                    <div class="col-6">
+                                        <div class="dropdown-image">
+                                            <a href="#">
+                                                <img src="/src/static/assets/mega-menu-3-1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <div class="dropdown-image">
+                                            <a href="#">
+                                                <img src="/src/static/assets/mega-menu-3-2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+
+                <li class="mega-menu position-relative">
+                    <a class="menu-child" href="#">Pages
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+
+                    <ul class="mega-menu-ch position-absolute">
+                        <li>
+                            <a href="#">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Contact Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Blog
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Faq's
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-3 col-md-5 col-sm-12">
+            <div class="shopify-section d-flex justify-content-center align-items-center w-100">
+                <ul class="menu-icon d-flex justify-content-center align-items-center">
+
+                    <li class="search">
+                        <i class="fas fa-search"></i>
+                    </li>
+
+                    <li class="currency">
+                        <select class="custom-select">
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option selected value="GBP">GBP</option>
+                            <option value="AUD">AUD</option>
+                            <option value="INR">INR</option>
+                            <option value="JPY">JPY</option>
+                            <option value="CAD">CAD</option>
+                            <option value="CNY">CNY</option>
+                            <option value="AED">AED</option>
+                            <option value="RUB">RUB</option>
+
+                        </select>
+                    </li>
+
+                    <li class="user position-relative">
+                        <a href="#">
+                            <i class="fas fa-user"></i>
+                        </a>
+
+                        <ul class="mega-menu-ch position-absolute">
+                            <li>
+                                <a href="#">
+                                    Log In
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Create account
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Wishlist
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="shopping-basket position-relative">
+                        <a href="#">
+                            <i class="fas fa-cart-plus"></i>
+                            <div class="detail d-flex justify-content-center align-items-center">
+                                <span>0</span>
+                            </div>
+                        </a>
+
+                        <div
+                            class="basket-top position-absolute d-flex flex column justify-content-center align-items-center">
+                            <div class="no-item text-center d-flex justify-content-center align-items-center w-100">
+                                <p style="margin: 0;">Your cart is currently empty!</p>
+                            </div>
+
+                            <div class="has-item"></div>
+                        </div>
+                    </li>
+
+                    <li class="header-mobile">
+                        <i class="fas fa-bars"></i>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</header>

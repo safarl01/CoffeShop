@@ -1,0 +1,241 @@
+.slick-list {
+    .container {
+        .row {
+            @include mobile {
+                height: 80%;
+            }
+
+            .carousel {
+                .carousel-control-prev {
+                    left: 1px !important;
+                }
+
+                .carousel-control-next {
+                    right: 1px !important;
+                }
+
+                .carousel-control-prev,
+                .carousel-control-next {
+                    width: 50px !important;
+                }
+
+                .carousel-inner {
+                    .slider-skew {
+                        &::before {
+                            width: 40%;
+                            height: 100%;
+                            content: "";
+                            float: left;
+                            background: rgba(0, 0, 0, 0.7);
+                            position: absolute;
+                            margin: auto;
+                            right: 0;
+                            left: 0;
+                            transform: skew(-10deg);
+
+                            @include mobile {
+                                width: 80% !important;
+                            }
+                        }
+                    }
+
+                    .carousel-item {
+                        .c-inner-res {
+                            max-width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            display: none;
+
+                            @include mobile {
+                                display: block !important;
+                            }
+                        }
+
+                        .c-inner {
+                            max-width: 100%;
+                            object-fit: cover;
+
+                            @include mobile {
+                                height: 100%;
+                                display: none !important;
+                            }
+                        }
+
+                        .content_left {
+                            @include mobile {
+                                left: 10% !important;
+                            }
+                        }
+
+                        .content-mobile {
+                            @include mobile {
+                                width: 80%;
+                                left: 10% !important;
+                            }
+                        }
+
+                        .slider-content {
+                            width: 40%;
+                            height: 100%;
+                            top: 0;
+                            margin: auto;
+                            background: rgba(0, 0, 0, 0.7);
+                            padding: 10px;
+
+                            @include mobile {
+                                width: 80%;
+                                right: 10% !important;
+                            }
+
+                            .slide-right {
+                                height: 100%;
+
+                                .slide-icon {
+                                    user-select: none;
+
+                                    @include resp-tab {
+                                        margin-top: 1rem !important;
+                                    }
+                                }
+
+                                .slide-text {
+                                    user-select: none;
+
+                                    h2 {
+                                        font-size: 60px;
+                                        color: #874d34;
+                                        margin: 0 0 15px;
+                                        font-family: 'Spicy Rice', cursive;
+
+                                        @include text-size {
+                                            font-size: 20px !important;
+                                        }
+                                    }
+
+                                    h3 {
+                                        font-size: 40px;
+                                        font-family: 'Roboto', sans-serif;
+                                        font-weight: bold;
+                                        text-transform: uppercase;
+                                        margin-bottom: 27px;
+                                        color: #874d34;
+
+                                        @include text-size {
+                                            font-size: 20px !important;
+                                        }
+                                    }
+                                }
+
+                                .slide-offer-text {
+                                    .text_before {
+                                        &::before {
+                                            left: 6% !important;
+                                        }
+
+                                        &::after {
+                                            right: 6% !important;
+                                        }
+                                    }
+
+                                    .offer-text {
+                                        font-size: 22px;
+                                        color: #ffffff;
+                                        font-weight: bold;
+                                        text-transform: uppercase;
+                                        line-height: normal;
+                                        margin-bottom: 7px;
+                                        padding: 0 70px;
+                                        font-family: 'Roboto', sans-serif;
+                                        user-select: none;
+
+                                        @include text-size {
+                                            font-size: 18px !important;
+                                        }
+
+                                        &::before {
+                                            content: "";
+                                            width: 45px;
+                                            height: 18px;
+                                            background-image: url(/src/static/assets/wine_small.png);
+                                            background-repeat: no-repeat;
+                                            display: inline-block;
+                                            vertical-align: middle;
+                                            margin: 0 0 5px;
+                                            position: absolute;
+                                            left: 19%;
+                                            top: 9px;
+
+                                            @include min-tablet {
+                                                left: 10% !important;
+                                            }
+                                        }
+
+                                        &::after {
+                                            content: "";
+                                            width: 45px;
+                                            height: 18px;
+                                            background-image: url(/src/static/assets/icon-1.png);
+                                            background-repeat: no-repeat;
+                                            display: inline-block;
+                                            vertical-align: middle;
+                                            margin: 0 0 5px;
+                                            position: absolute;
+                                            right: 19%;
+                                            top: 9px;
+
+                                            @include min-tablet {
+                                                right: 10% !important;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .slide-button {
+                                    @include resp-tab {
+                                        margin-top: 1rem !important;
+                                    }
+
+                                    .btn {
+                                        background: #be9c79;
+                                        color: #fff;
+                                        border: 2px solid #be9c79;
+                                        padding: 10px 24px;
+                                        position: relative;
+                                        outline: none;
+                                        font-size: 16px;
+                                        margin: 0;
+                                        transition: .4s ease;
+
+                                        @include text-size {
+                                            font-size: 14px;
+                                            padding: 10px 15px;
+                                        }
+
+                                        &:hover {
+                                            border-color: #5e473e;
+                                            background: #5e473e;
+                                        }
+
+                                        &::after {
+                                            content: "";
+                                            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+                                            position: absolute;
+                                            width: 100%;
+                                            height: 100%;
+                                            background: url(/src/static/assets/pattern.png) no-repeat;
+                                            background-position: 50% 70%;
+                                            border-radius: 100px;
+                                            top: 0px;
+                                            right: 0;
+                                            // z-index: -1;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

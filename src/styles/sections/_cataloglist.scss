@@ -1,0 +1,90 @@
+.catalog-list {
+    padding: 100px 0 70px;
+
+    .container {
+        .row {
+            .list-text {
+                margin-bottom: 40px;
+
+                h2 {
+                    color: #514242;
+                    font-family: 'Spicy Rice', cursive;
+                    font-weight: normal;
+                    font-size: 31px;
+                    margin: 0 0 15px;
+                }
+            }
+
+            .list-grid {
+                @include mobile {
+                    flex-direction: column;
+                }
+
+                @include min-tablet {
+                    flex-direction: column;
+
+                    .center-image {
+                        display: none !important;
+                    }
+
+                    .list-order {
+                        .list-i-content {
+                            order: 2;
+                        }
+
+                        .list-icon {
+                            order: 1;
+                        }
+                    }
+                }
+
+                .list-information {
+                    padding: 0px 20px 30px 0px;
+
+                    .list-i-content {
+                        @include min-tablet {
+                            text-align: left !important;
+                        }
+
+                        h4 {
+                            color: #874d34;
+                            font-size: 20px;
+                            letter-spacing: 0.05em;
+                            margin: 0 0 15px;
+                            line-height: 1.1;
+                            font-family: 'Spicy Rice', cursive;
+                            font-weight: normal;
+                            transition: .4s ease;
+                        }
+
+                        p {
+                            color: #000;
+                            margin: 0 0 15px 0;
+                            line-height: 1.7;
+                        }
+                    }
+
+                    .list-icon {
+                        height: 100%;
+
+                        img {
+                            transition: .4s ease;
+                        }
+                    }
+
+                    &:hover {
+                        h4 {
+                            color: #be9c79;
+                        }
+
+                        .list-icon {
+                            img {
+                                transform: scaleX(-1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
