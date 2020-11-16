@@ -1,0 +1,54 @@
+.coffee-message {
+    background-image: url("/src/static/assets/img-1.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+
+    .container {
+        .row {
+            .message-side, .shop_btn {
+                width: 50%;
+                height: 100%;
+
+                @include min-tablet {
+                    width: 100%;
+                }
+
+                h2 {
+                    color: #514242;
+                    font-size: 31px;
+                    letter-spacing: 0.05em;
+                    margin: 0 0 15px;
+                    line-height: 1.1;
+                    font-weight: normal;
+                    font-family: 'Spicy Rice', cursive;
+                }
+
+                h4 {
+                    color: #a45f41;
+                    font-size: 20px;
+                    margin-bottom: 30px;
+                    letter-spacing: 0.05em;
+                    margin: 0 0 15px;
+                    line-height: 1.1;
+                    font-weight: normal;
+                    font-family: 'Spicy Rice', cursive;
+                }
+
+                p {
+                    color: #473c3c;
+                    padding: 0 0px;
+                    margin: 20px 0 15px 0;
+                    line-height: 1.7;
+                }
+
+                .logo-ban {
+                    float: left;
+                    margin: auto auto 10px;
+                }
+            }
+        }
+    }
+}

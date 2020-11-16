@@ -1,0 +1,107 @@
+.shopify-one {
+    padding: 100px 0px 90px 0;
+
+    .container {
+        .row {
+
+            // Shopify Left
+            .shopify-left {
+                height: 100%;
+
+                .owl-carousel {
+                    height: 100%;
+                    padding-right: 30px;
+
+                    @include min-tablet {
+                        padding-right: 0;
+                    }
+
+                    .owl-stage-outer {
+                        height: 100%;
+                    }
+
+
+                    .owl-dots {
+                        height: 100px !important;
+                        display: block !important;
+
+                        .owl-dot {
+                            span {
+                                background: #be9c79;
+                            }
+
+                            &:hover {
+                                span {
+                                    background: #5e473e !important;
+                                }
+                            }
+                        }
+                    }
+
+                    .item {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                }
+            }
+
+            // Shopify Right
+            .shopify-right {
+                h3 {
+                    color: #514242;
+                    font-size: 23px;
+                    letter-spacing: 0.05em;
+                    margin: 0 0 15px;
+                    line-height: 1.1;
+                    font-family: 'Spicy Rice', cursive;
+                    font-weight: normal;
+                }
+
+                .support-block {
+                    width: 100%;
+
+                    li {
+                        .support-section {
+                            display: inline-block;
+                            padding: 10px 30px 0 0;
+                            margin: 0;
+                            transition: all 0.4s ease-in-out;
+
+                            a {
+                                color: #be9c79;
+                            }
+
+                            .support-text {
+                                width: 80%;
+                                padding: 0px 0 0 15px;
+                                margin: 10px 1px 0 0;
+
+                                h5 {
+                                    color: #874d34;
+                                    margin-bottom: 5px;
+                                    letter-spacing: 0.05em;
+                                    margin: 0 0 15px;
+                                    line-height: 1.1;
+                                    font-family: 'Spicy Rice', cursive;
+                                    font-weight: normal;
+                                    transition: .3s ease;
+
+                                    &:hover {
+                                        color: #be9c79;
+                                    }
+                                }
+
+                                p {
+                                    color: #473c3c;
+                                    margin: 5px 0;
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,6 +1,7 @@
 'use strict';
 import 'bootstrap/dist/js/bootstrap';
-
+import 'owl.carousel2/dist/owl.carousel';
+import './main';
 $(function () {
 
   // $(document).on("click", "#alert", function(){
@@ -144,5 +145,26 @@ $(function () {
     }
   });
   // Header Scroll End
+
+  // Owl-Carousel Start
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    dots:true,
+    margin:10,
+    // navText: ["<img src='../assets/png/sdsd.png'>", "<img src='../assets/png/dsd.png'>"],
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:1,
+        },
+        1000:{
+            items:1,
+        }
+    }
+})
+  // Owl-Carousel End
 
 });
