@@ -146,25 +146,46 @@ $(function () {
   });
   // Header Scroll End
 
-  // Owl-Carousel Start
-  $('.owl-carousel').owlCarousel({
-    loop:true,
-    dots:true,
-    margin:10,
-    // navText: ["<img src='../assets/png/sdsd.png'>", "<img src='../assets/png/dsd.png'>"],
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-        },
-        600:{
-            items:1,
-        },
-        1000:{
-            items:1,
-        }
+  // Owl-Carousel-One Start
+  $('.owl-c-one').owlCarousel({
+    loop: true,
+    dots: true,
+    margin: 10,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 1,
+      },
+      1000: {
+        items: 1,
+      }
     }
-})
-  // Owl-Carousel End
+  });
+  // Owl-Carousel-One End
+
+  // Owl-Carousel-Two Start
+  $('.owl-c-two').owlCarousel({
+    loop: false,
+    dots: false,
+    nav: true,
+    margin: 10,
+    // navText: ["<img src='../assets/png/sdsd.png'>", "<img src='../assets/png/dsd.png'>"],
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 1,
+      },
+      1000: {
+        items: 4,
+      }
+    }
+  });
+  // Owl-Carousel-Two End
 
 });

@@ -7,9 +7,17 @@ body {
 // html {
 // }
 
+.nav-tabs {
+    .active {
+        background: #5e473e !important;
+        border-color: #5e473e !important;
+        color: #fff !important;
+    }
+}
+
 .active {
     span {
-       background: #5e473e !important;
+        background: #5e473e !important;
     }
 }
 
@@ -29,4 +37,13 @@ a {
     &:hover {
         text-decoration: none;
     }
+}
+
+h2,h3 {
+    color: #514242;
+    letter-spacing: 0.05em;
+    margin: 0 0 15px;
+    line-height: 1.1;
+    font-family: 'Spicy Rice', cursive;
+    font-weight: normal;
 }

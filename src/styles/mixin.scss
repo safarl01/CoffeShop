@@ -28,6 +28,12 @@
     }
 }
 
+@mixin min-mobile {
+    @media (max-width: 510px){
+        @content;
+    }
+}
+
 // @mixin mobile {
 //     @media (max-width: 767px){
 //         @content;

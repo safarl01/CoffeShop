@@ -1,0 +1,50 @@
+.coffee-tab {
+    padding: 95px 0 65px;
+
+    .container {
+        .row {
+            .tab-title {
+                h2 {
+                    color: #514242;
+                    font-size: 31px;
+                    letter-spacing: 0.05em;
+                    margin: 0 0 15px;
+                    line-height: 1.1;
+                    font-family: 'Spicy Rice', cursive;
+                    font-weight: normal;
+                }
+
+                p {
+                    color: #473c3c;
+                    margin: 0 0 15px 0;
+                    width: 40%;
+                }
+            }
+
+            .tab-side {
+                .nav-tabs {
+                    border: none;
+
+                    .nav-link {
+                        color: #473c3c;
+                        padding: 5px 20px;
+                        margin: 0 10px 0 0;
+                        border: none !important;
+                        border-radius: 0 !important;
+                    }
+                }
+
+                .tab-content {
+                    .owl-c-two {
+                        .owl-stage-outer {
+                            .owl-stage {
+                                display: flex;
+                                flex-wrap: wrap;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
