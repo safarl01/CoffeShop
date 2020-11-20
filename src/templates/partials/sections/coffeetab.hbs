@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="tab-title d-flex flex-column justify-content-center align-items-center text-center w-100">
+                <div class="tab-title d-flex flex-column justify-content-center align-items-center text-center pb-4 w-100">
                     <h2>Our Products</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
                         mattis, pulvinar dapibus leo.</p>
@@ -21,51 +21,1700 @@
                                 aria-controls="nav-contact" aria-selected="false">Powder</a>
                         </div>
                     </nav>
-                    <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-content pt-5" id="nav-tabContent">
+
+                        {{!-- Bean --}}
                         <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
                             aria-labelledby="nav-home-tab">
+
                             <div class="owl-carousel owl-c-two owl-theme">
-                                <div class="item order-0">
-                                    <h4>ONE</h4>
+                                <div class="item">
+                                    {{> common/shoptab }}
+
                                 </div>
-                                <div class="item order-5">
-                                    <h4>TWO</h4>
+                                <div class="item">
+                                    <div class="shop-image d-flex flex-column w-100">
+                                        <div class="reveal-side">
+                                            <a href="#">
+                                                <div class="reveal d-flex">
+                                                    <img src="/src/static/assets/product-2.jpg" alt="coffee">
+                                                    <img class="reveal-img" src="/src/static/assets/product-2_2.jpg"
+                                                        alt="coffee">
+                                                </div>
+
+                                                <div
+                                                    class="img-wrapper d-flex justify-content-end align-items-end w-100">
+                                                    <div class="product-button">
+                                                        <ul class="pb-parent">
+                                                            <li
+                                                                class="pb-child pb_none d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-eye"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="fas fa-link"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-heart"></i>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-detail text-center w-100">
+                                            <a class="p-title" href="#">
+                                                <h2>Kona Coffee Bean</h2>
+                                            </a>
+
+                                            <div
+                                                class="product-center d-flex justify-content-between align-items-center w-100">
+                                                <div class="product-left">
+                                                    <span>£248.19</span>
+                                                </div>
+
+                                                <div class="shop-side text-center">
+                                                    <a class="add-to-card d-flex justify-content-center align-items-center"
+                                                        title="Add to Card">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
-                                <div class="item order-1">
-                                    <h4>THREE</h4>
+                                <div class="item">
+                                    <div class="shop-image d-flex flex-column w-100">
+                                        <div class="reveal-side">
+                                            <a href="#">
+                                                <div class="reveal d-flex">
+                                                    <img src="/src/static/assets/product-3.jpg" alt="coffee">
+                                                    <img class="reveal-img" src="/src/static/assets/product-3_3.jpg"
+                                                        alt="coffee">
+                                                </div>
+
+                                                <div
+                                                    class="img-wrapper d-flex justify-content-end align-items-end w-100">
+                                                    <div class="product-button">
+                                                        <ul class="pb-parent">
+                                                            <li
+                                                                class="pb-child pb_none d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-eye"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="fas fa-link"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-heart"></i>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-detail text-center w-100">
+                                            <a class="p-title" href="#">
+                                                <h2>Catuai Coffee Bean</h2>
+                                            </a>
+
+                                            <div
+                                                class="product-center d-flex justify-content-between align-items-center w-100">
+                                                <div class="product-left">
+                                                    <span>£598.18</span>
+                                                </div>
+
+                                                <div class="shop-side text-center">
+                                                    <a class="add-to-card d-flex justify-content-center align-items-center"
+                                                        title="Add to Card">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
-                                <div class="item order-6">
-                                    <h4>FOUR</h4>
+                                <div class="item">
+                                    <div class="shop-image d-flex flex-column w-100">
+                                        <div class="reveal-side">
+                                            <a href="#">
+                                                <div class="reveal d-flex">
+                                                    <img src="/src/static/assets/product-4.jpg" alt="coffee">
+                                                    <img class="reveal-img" src="/src/static/assets/product-4_4.jpg"
+                                                        alt="coffee">
+                                                </div>
+
+                                                <div
+                                                    class="img-wrapper d-flex justify-content-end align-items-end w-100">
+                                                    <div class="product-button">
+                                                        <ul class="pb-parent">
+                                                            <li
+                                                                class="pb-child pb_none d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-eye"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="fas fa-link"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-heart"></i>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-detail text-center w-100">
+                                            <a class="p-title" href="#">
+                                                <h2>Gusto Coffee Bean</h2>
+                                            </a>
+
+                                            <div
+                                                class="product-center d-flex justify-content-between align-items-center w-100">
+                                                <div class="product-left">
+                                                    <span>£164.45</span>
+                                                </div>
+
+                                                <div class="shop-side text-center">
+                                                    <a class="add-to-card d-flex justify-content-center align-items-center"
+                                                        title="Add to Card">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
-                                <div class="item order-2">
-                                    <h4>FIVE</h4>
+                                <div class="item">
+                                    <div class="shop-image d-flex flex-column w-100">
+                                        <div class="reveal-side">
+                                            <a href="#">
+                                                <div class="reveal d-flex">
+                                                    <img src="/src/static/assets/product-5.jpg" alt="coffee">
+                                                    <img class="reveal-img" src="/src/static/assets/product-5_5.jpg"
+                                                        alt="coffee">
+                                                </div>
+
+                                                <div
+                                                    class="img-wrapper d-flex justify-content-end align-items-end w-100">
+                                                    <div class="product-button">
+                                                        <ul class="pb-parent">
+                                                            <li
+                                                                class="pb-child pb_none d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-eye"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="fas fa-link"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-heart"></i>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-detail text-center w-100">
+                                            <a class="p-title" href="#">
+                                                <h2>Green Coffee Powder</h2>
+                                            </a>
+
+                                            <div
+                                                class="product-center d-flex justify-content-between align-items-center w-100">
+                                                <div class="product-left">
+                                                    <span>£399.05</span>
+                                                </div>
+
+                                                <div class="shop-side text-center">
+                                                    <a class="add-to-card d-flex justify-content-center align-items-center"
+                                                        title="Add to Card">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
 
-                                <div class="item order-7">
-                                    <h4>SIX</h4>
+                                <div class="item">
+                                    <div class="shop-image d-flex flex-column w-100">
+                                        <div class="reveal-side">
+                                            <a href="#">
+                                                <div class="reveal d-flex">
+                                                    <img src="/src/static/assets/product-6.jpg" alt="coffee">
+                                                    <img class="reveal-img" src="/src/static/assets/product-6_6.jpg"
+                                                        alt="coffee">
+                                                </div>
+
+                                                <div
+                                                    class="img-wrapper d-flex justify-content-end align-items-end w-100">
+                                                    <div class="product-button">
+                                                        <ul class="pb-parent">
+                                                            <li
+                                                                class="pb-child pb_none d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-eye"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="fas fa-link"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-heart"></i>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-detail text-center w-100">
+                                            <a class="p-title" href="#">
+                                                <h2>Maragogipe Coffee Bean</h2>
+                                            </a>
+
+                                            <div
+                                                class="product-center d-flex justify-content-between align-items-center w-100">
+                                                <div class="product-left">
+                                                    <span>£557.46</span>
+                                                </div>
+
+                                                <div class="shop-side text-center">
+                                                    <a class="add-to-card d-flex justify-content-center align-items-center"
+                                                        title="Add to Card">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
-                                <div class="item order-3">
-                                    <h4>SEVEN</h4>
+                                <div class="item">
+                                    <div class="shop-image d-flex flex-column w-100">
+                                        <div class="reveal-side">
+                                            <a href="#">
+                                                <div class="reveal d-flex">
+                                                    <img src="/src/static/assets/product-7.jpg" alt="coffee">
+                                                    <img class="reveal-img" src="/src/static/assets/product-7_7.jpg"
+                                                        alt="coffee">
+                                                </div>
+
+                                                <div
+                                                    class="img-wrapper d-flex justify-content-end align-items-end w-100">
+                                                    <div class="product-button">
+                                                        <ul class="pb-parent">
+                                                            <li
+                                                                class="pb-child pb_none d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-eye"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="fas fa-link"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-heart"></i>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-detail text-center w-100">
+                                            <a class="p-title" href="#">
+                                                <h2>Geisha Coffee Bean</h2>
+                                            </a>
+
+                                            <div
+                                                class="product-center d-flex justify-content-between align-items-center w-100">
+                                                <div class="product-left">
+                                                    <span>£406.59</span>
+                                                </div>
+
+                                                <div class="shop-side text-center">
+                                                    <a class="add-to-card d-flex justify-content-center align-items-center"
+                                                        title="Add to Card">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
-                                <div class="item order-8">
-                                    <h4>EIGHT</h4>
+                                <div class="item">
+                                    <div class="shop-image d-flex flex-column w-100">
+                                        <div class="reveal-side">
+                                            <a href="#">
+                                                <div class="reveal d-flex">
+                                                    <img src="/src/static/assets/product-8.jpg" alt="coffee">
+                                                    <img class="reveal-img" src="/src/static/assets/product-8_8.jpg"
+                                                        alt="coffee">
+                                                </div>
+
+                                                <div
+                                                    class="img-wrapper d-flex justify-content-end align-items-end w-100">
+                                                    <div class="product-button">
+                                                        <ul class="pb-parent">
+                                                            <li
+                                                                class="pb-child pb_none d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-eye"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="fas fa-link"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-heart"></i>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-detail text-center w-100">
+                                            <a class="p-title" href="#">
+                                                <h2>Coffee Bean Sachet</h2>
+                                            </a>
+
+                                            <div
+                                                class="product-center d-flex justify-content-between align-items-center w-100">
+                                                <div class="product-left">
+                                                    <span>£248.18</span>
+                                                </div>
+
+                                                <div class="shop-side text-center">
+                                                    <a class="add-to-card d-flex justify-content-center align-items-center"
+                                                        title="Add to Card">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
-                                <div class="item order-4">
-                                    <h4>NINE</h4>
+                                <div class="item">
+                                    <div class="shop-image d-flex flex-column w-100">
+                                        <div class="reveal-side">
+                                            <a href="#">
+                                                <div class="reveal d-flex">
+                                                    <img src="/src/static/assets/product-9.jpg" alt="coffee">
+                                                    <img class="reveal-img" src="/src/static/assets/product-9_9.jpg"
+                                                        alt="coffee">
+                                                </div>
+
+                                                <div
+                                                    class="img-wrapper d-flex justify-content-end align-items-end w-100">
+                                                    <div class="product-button">
+                                                        <ul class="pb-parent">
+                                                            <li
+                                                                class="pb-child pb_none d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-eye"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="fas fa-link"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-heart"></i>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-detail text-center w-100">
+                                            <a class="p-title" href="#">
+                                                <h2>Jumber Coffee Bean</h2>
+                                            </a>
+
+                                            <div
+                                                class="product-center d-flex justify-content-between align-items-center w-100">
+                                                <div class="product-left">
+                                                    <span>£399.05</span>
+                                                </div>
+
+                                                <div class="shop-side text-center">
+                                                    <a class="add-to-card d-flex justify-content-center align-items-center"
+                                                        title="Add to Card">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
-                                <div class="item order-9">
-                                    <h4>TEN</h4>
+                                <div class="item">
+                                    <div class="shop-image d-flex flex-column w-100">
+                                        <div class="reveal-side">
+                                            <a href="#">
+                                                <div class="reveal d-flex">
+                                                    <img src="/src/static/assets/product-10.jpg" alt="coffee">
+                                                    <img class="reveal-img" src="/src/static/assets/product-10_10.jpg"
+                                                        alt="coffee">
+                                                </div>
+
+                                                <div
+                                                    class="img-wrapper d-flex justify-content-end align-items-end w-100">
+                                                    <div class="product-button">
+                                                        <ul class="pb-parent">
+                                                            <li
+                                                                class="pb-child pb_none d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-eye"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="fas fa-link"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-heart"></i>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-detail text-center w-100">
+                                            <a class="p-title" href="#">
+                                                <h2>Italiya Coffee Premix</h2>
+                                            </a>
+
+                                            <div
+                                                class="product-center d-flex justify-content-between align-items-center w-100">
+                                                <div class="product-left">
+                                                    <span>£399.05</span>
+                                                </div>
+
+                                                <div class="shop-side text-center">
+                                                    <a class="add-to-card d-flex justify-content-center align-items-center"
+                                                        title="Add to Card">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="owl-nav">
+                                    <div class="owl-prev">
+                                        <i class="fas fa-angle-left"></i>
+                                    </div>
+
+                                    <div class="owl-next">
+                                        <i class="fas fa-angle-right"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                            ...
+                        {{!-- Powder --}}
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <div class="owl-carousel owl-c-two owl-theme">
+                                <div class="item">
+                                    <div class="shop-image d-flex flex-column w-100">
+                                        <div class="reveal-side">
+                                            <a href="#">
+                                                <div class="reveal d-flex">
+                                                    <img src="/src/static/assets/product-11.webp" alt="coffee">
+                                                    <img class="reveal-img" src="/src/static/assets/product-11_11.webp"
+                                                        alt="coffee">
+                                                </div>
+
+                                                <div
+                                                    class="img-wrapper d-flex justify-content-end align-items-end w-100">
+                                                    <div class="product-button">
+                                                        <ul class="pb-parent">
+                                                            <li
+                                                                class="pb-child pb_none d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-eye"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="fas fa-link"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-heart"></i>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-detail text-center w-100">
+                                            <a class="p-title" href="#">
+                                                <h2>Gradelovpe Coffee Bean</h2>
+                                            </a>
+
+                                            <div
+                                                class="product-center d-flex justify-content-between align-items-center w-100">
+                                                <div class="product-left">
+                                                    <span>£165.20</span>
+                                                </div>
+
+                                                <div class="shop-side text-center">
+                                                    <a class="add-to-card d-flex justify-content-center align-items-center"
+                                                        title="Add to Card">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="shop-image d-flex flex-column w-100">
+                                        <div class="reveal-side">
+                                            <a href="#">
+                                                <div class="reveal d-flex">
+                                                    <img src="/src/static/assets/product-12.jpg" alt="coffee">
+                                                    <img class="reveal-img" src="/src/static/assets/product-12_12.jpg"
+                                                        alt="coffee">
+                                                </div>
+
+                                                <div
+                                                    class="img-wrapper d-flex justify-content-end align-items-end w-100">
+                                                    <div class="product-button">
+                                                        <ul class="pb-parent">
+                                                            <li
+                                                                class="pb-child pb_none d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-eye"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="fas fa-link"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-heart"></i>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-detail text-center w-100">
+                                            <a class="p-title" href="#">
+                                                <h2>Kapeng Barako Bean</h2>
+                                            </a>
+
+                                            <div
+                                                class="product-center d-flex justify-content-between align-items-center w-100">
+                                                <div class="product-left">
+                                                    <span>£248.18</span>
+                                                </div>
+
+                                                <div class="shop-side text-center">
+                                                    <a class="add-to-card d-flex justify-content-center align-items-center"
+                                                        title="Add to Card">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="shop-image d-flex flex-column w-100">
+                                        <div class="reveal-side">
+                                            <a href="#">
+                                                <div class="reveal d-flex">
+                                                    <img src="/src/static/assets/product-13.jpg" alt="coffee">
+                                                    <img class="reveal-img" src="/src/static/assets/product-13_13.jpg"
+                                                        alt="coffee">
+                                                </div>
+
+                                                <div
+                                                    class="img-wrapper d-flex justify-content-end align-items-end w-100">
+                                                    <div class="product-button">
+                                                        <ul class="pb-parent">
+                                                            <li
+                                                                class="pb-child pb_none d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-eye"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="fas fa-link"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-heart"></i>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-detail text-center w-100">
+                                            <a class="p-title" href="#">
+                                                <h2>Molokai Coffee Bean</h2>
+                                            </a>
+
+                                            <div
+                                                class="product-center d-flex justify-content-between align-items-center w-100">
+                                                <div class="product-left">
+                                                    <span>£406.59</span>
+                                                </div>
+
+                                                <div class="shop-side text-center">
+                                                    <a class="add-to-card d-flex justify-content-center align-items-center"
+                                                        title="Add to Card">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="shop-image d-flex flex-column w-100">
+                                        <div class="reveal-side">
+                                            <a href="#">
+                                                <div class="reveal d-flex">
+                                                    <img src="/src/static/assets/product-4.jpg" alt="coffee">
+                                                    <img class="reveal-img" src="/src/static/assets/product-4_4.jpg"
+                                                        alt="coffee">
+                                                </div>
+
+                                                <div
+                                                    class="img-wrapper d-flex justify-content-end align-items-end w-100">
+                                                    <div class="product-button">
+                                                        <ul class="pb-parent">
+                                                            <li
+                                                                class="pb-child pb_none d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-eye"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="fas fa-link"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-heart"></i>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-detail text-center w-100">
+                                            <a class="p-title" href="#">
+                                                <h2>Gosto Coffee Pean</h2>
+                                            </a>
+
+                                            <div
+                                                class="product-center d-flex justify-content-between align-items-center w-100">
+                                                <div class="product-left">
+                                                    <span>£164.45</span>
+                                                </div>
+
+                                                <div class="shop-side text-center">
+                                                    <a class="add-to-card d-flex justify-content-center align-items-center"
+                                                        title="Add to Card">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="item">
+                                    <div class="shop-image d-flex flex-column w-100">
+                                        <div class="reveal-side">
+                                            <a href="#">
+                                                <div class="reveal d-flex">
+                                                    <img src="/src/static/assets/product-14.jpg" alt="coffee">
+                                                    <img class="reveal-img" src="/src/static/assets/product-5.jpg"
+                                                        alt="coffee">
+                                                </div>
+
+                                                <div
+                                                    class="img-wrapper d-flex justify-content-end align-items-end w-100">
+                                                    <div class="product-button">
+                                                        <ul class="pb-parent">
+                                                            <li
+                                                                class="pb-child pb_none d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-eye"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="fas fa-link"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-heart"></i>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-detail text-center w-100">
+                                            <a class="p-title" href="#">
+                                                <h2>Classic Coffee Powder</h2>
+                                            </a>
+
+                                            <div
+                                                class="product-center d-flex justify-content-between align-items-center w-100">
+                                                <div class="product-left">
+                                                    <span>£399.57</span>
+                                                </div>
+
+                                                <div class="shop-side text-center">
+                                                    <a class="add-to-card d-flex justify-content-center align-items-center"
+                                                        title="Add to Card">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="shop-image d-flex flex-column w-100">
+                                        <div class="reveal-side">
+                                            <a href="#">
+                                                <div class="reveal d-flex">
+                                                    <img src="/src/static/assets/product28_large.jpg" alt="coffee">
+                                                    <img class="reveal-img"
+                                                        src="/src/static/assets/product28_large_1.jpg" alt="coffee">
+                                                </div>
+
+                                                <div
+                                                    class="img-wrapper d-flex justify-content-end align-items-end w-100">
+                                                    <div class="product-button">
+                                                        <ul class="pb-parent">
+                                                            <li
+                                                                class="pb-child pb_none d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-eye"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="fas fa-link"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-heart"></i>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-detail text-center w-100">
+                                            <a class="p-title" href="#">
+                                                <h2>Bourbon Coffee Bean</h2>
+                                            </a>
+
+                                            <div
+                                                class="product-center d-flex justify-content-between align-items-center w-100">
+                                                <div class="product-left">
+                                                    <span>£386.22</span>
+                                                </div>
+
+                                                <div class="shop-side text-center">
+                                                    <a class="add-to-card d-flex justify-content-center align-items-center"
+                                                        title="Add to Card">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="shop-image d-flex flex-column w-100">
+                                        <div class="reveal-side">
+                                            <a href="#">
+                                                <div class="reveal d-flex">
+                                                    <img src="/src/static/assets/product-7_7.jpg" alt="coffee">
+                                                    <img class="reveal-img" src="/src/static/assets/product-15_15.webp"
+                                                        alt="coffee">
+                                                </div>
+
+                                                <div
+                                                    class="img-wrapper d-flex justify-content-end align-items-end w-100">
+                                                    <div class="product-button">
+                                                        <ul class="pb-parent">
+                                                            <li
+                                                                class="pb-child pb_none d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-eye"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="fas fa-link"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-heart"></i>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-detail text-center w-100">
+                                            <a class="p-title" href="#">
+                                                <h2>Jamaican Bean Sachet</h2>
+                                            </a>
+
+                                            <div
+                                                class="product-center d-flex justify-content-between align-items-center w-100">
+                                                <div class="product-left">
+                                                    <span>£406.59</span>
+                                                </div>
+
+                                                <div class="shop-side text-center">
+                                                    <a class="add-to-card d-flex justify-content-center align-items-center"
+                                                        title="Add to Card">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="shop-image d-flex flex-column w-100">
+                                        <div class="reveal-side">
+                                            <a href="#">
+                                                <div class="reveal d-flex">
+                                                    <img src="/src/static/assets/product-8.jpg" alt="coffee">
+                                                    <img class="reveal-img" src="/src/static/assets/product-8_8.jpg"
+                                                        alt="coffee">
+                                                </div>
+
+                                                <div
+                                                    class="img-wrapper d-flex justify-content-end align-items-end w-100">
+                                                    <div class="product-button">
+                                                        <ul class="pb-parent">
+                                                            <li
+                                                                class="pb-child pb_none d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-eye"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="fas fa-link"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-heart"></i>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-detail text-center w-100">
+                                            <a class="p-title" href="#">
+                                                <h2>Gold Blend Coffee Bean</h2>
+                                            </a>
+
+                                            <div
+                                                class="product-center d-flex justify-content-between align-items-center w-100">
+                                                <div class="product-left">
+                                                    <span>£248.18</span>
+                                                </div>
+
+                                                <div class="shop-side text-center">
+                                                    <a class="add-to-card d-flex justify-content-center align-items-center"
+                                                        title="Add to Card">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="shop-image d-flex flex-column w-100">
+                                        <div class="reveal-side">
+                                            <a href="#">
+                                                <div class="reveal d-flex">
+                                                    <img src="/src/static/assets/product-16.webp" alt="coffee">
+                                                    <img class="reveal-img" src="/src/static/assets/product-4.jpg"
+                                                        alt="coffee">
+                                                </div>
+
+                                                <div
+                                                    class="img-wrapper d-flex justify-content-end align-items-end w-100">
+                                                    <div class="product-button">
+                                                        <ul class="pb-parent">
+                                                            <li
+                                                                class="pb-child pb_none d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-eye"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="fas fa-link"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-heart"></i>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-detail text-center w-100">
+                                            <a class="p-title" href="#">
+                                                <h2>Instant Coffee Powder</h2>
+                                            </a>
+
+                                            <div
+                                                class="product-center d-flex justify-content-between align-items-center w-100">
+                                                <div class="product-left">
+                                                    <span>£164.45</span>
+                                                </div>
+
+                                                <div class="shop-side text-center">
+                                                    <a class="add-to-card d-flex justify-content-center align-items-center"
+                                                        title="Add to Card">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="item">
+                                    <div class="shop-image d-flex flex-column w-100">
+                                        <div class="reveal-side">
+                                            <a href="#">
+                                                <div class="reveal d-flex">
+                                                    <img src="/src/static/assets/product-10_10.jpg" alt="coffee">
+                                                    <img class="reveal-img" src="/src/static/assets/product-17.webp"
+                                                        alt="coffee">
+                                                </div>
+
+                                                <div
+                                                    class="img-wrapper d-flex justify-content-end align-items-end w-100">
+                                                    <div class="product-button">
+                                                        <ul class="pb-parent">
+                                                            <li
+                                                                class="pb-child pb_none d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-eye"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="fas fa-link"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-heart"></i>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-detail text-center w-100">
+                                            <a class="p-title" href="#">
+                                                <h2>Latte Instant Coffee</h2>
+                                            </a>
+
+                                            <div
+                                                class="product-center d-flex justify-content-between align-items-center w-100">
+                                                <div class="product-left">
+                                                    <span>£399.05</span>
+                                                </div>
+
+                                                <div class="shop-side text-center">
+                                                    <a class="add-to-card d-flex justify-content-center align-items-center"
+                                                        title="Add to Card">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                            ...
+                        {{!-- Berries --}}
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="owl-carousel owl-c-two owl-theme">
+                                <div class="item">
+                                    <div class="shop-image d-flex flex-column w-100">
+                                        <div class="reveal-side">
+                                            <a href="#">
+                                                <div class="reveal d-flex">
+                                                    <img src="/src/static/assets/product-6_6.jpg" alt="coffee">
+                                                    <img class="reveal-img" src="/src/static/assets/product-1.jpg"
+                                                        alt="coffee">
+                                                </div>
+
+                                                <div
+                                                    class="img-wrapper d-flex justify-content-end align-items-end w-100">
+                                                    <div class="product-button">
+                                                        <ul class="pb-parent">
+                                                            <li
+                                                                class="pb-child pb_none d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-eye"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="fas fa-link"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-heart"></i>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-detail text-center w-100">
+                                            <a class="p-title" href="#">
+                                                <h2>Robusta Coffee Bean</h2>
+                                            </a>
+
+                                            <div
+                                                class="product-center d-flex justify-content-between align-items-center w-100">
+                                                <div class="product-left">
+                                                    <span>£394.52</span>
+                                                </div>
+
+                                                <div class="shop-side text-center">
+                                                    <a class="add-to-card d-flex justify-content-center align-items-center"
+                                                        title="Add to Card">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="shop-image d-flex flex-column w-100">
+                                        <div class="reveal-side">
+                                            <a href="#">
+                                                <div class="reveal d-flex">
+                                                    <img src="/src/static/assets/product-15_15.webp" alt="coffee">
+                                                    <img class="reveal-img" src="/src/static/assets/product-2.jpg"
+                                                        alt="coffee">
+                                                </div>
+
+                                                <div
+                                                    class="img-wrapper d-flex justify-content-end align-items-end w-100">
+                                                    <div class="product-button">
+                                                        <ul class="pb-parent">
+                                                            <li
+                                                                class="pb-child pb_none d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-eye"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="fas fa-link"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-heart"></i>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-detail text-center w-100">
+                                            <a class="p-title" href="#">
+                                                <h2>Eoasted Coffee Bean</h2>
+                                            </a>
+
+                                            <div
+                                                class="product-center d-flex justify-content-between align-items-center w-100">
+                                                <div class="product-left">
+                                                    <span>£406.59</span>
+                                                </div>
+
+                                                <div class="shop-side text-center">
+                                                    <a class="add-to-card d-flex justify-content-center align-items-center"
+                                                        title="Add to Card">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="shop-image d-flex flex-column w-100">
+                                        <div class="reveal-side">
+                                            <a href="#">
+                                                <div class="reveal d-flex">
+                                                    <img src="/src/static/assets/product-8_8.jpg" alt="coffee">
+                                                    <img class="reveal-img" src="/src/static/assets/product-3.jpg"
+                                                        alt="coffee">
+                                                </div>
+
+                                                <div
+                                                    class="img-wrapper d-flex justify-content-end align-items-end w-100">
+                                                    <div class="product-button">
+                                                        <ul class="pb-parent">
+                                                            <li
+                                                                class="pb-child pb_none d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-eye"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="fas fa-link"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-heart"></i>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-detail text-center w-100">
+                                            <a class="p-title" href="#">
+                                                <h2>Monsooned Malabar Bean</h2>
+                                            </a>
+
+                                            <div
+                                                class="product-center d-flex justify-content-between align-items-center w-100">
+                                                <div class="product-left">
+                                                    <span>£164.45</span>
+                                                </div>
+
+                                                <div class="shop-side text-center">
+                                                    <a class="add-to-card d-flex justify-content-center align-items-center"
+                                                        title="Add to Card">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="shop-image d-flex flex-column w-100">
+                                        <div class="reveal-side">
+                                            <a href="#">
+                                                <div class="reveal d-flex">
+                                                    <img src="/src/static/assets/product10_large.webp" alt="coffee">
+                                                    <img class="reveal-img" src="/src/static/assets/product-16.webp"
+                                                        alt="coffee">
+                                                </div>
+
+                                                <div
+                                                    class="img-wrapper d-flex justify-content-end align-items-end w-100">
+                                                    <div class="product-button">
+                                                        <ul class="pb-parent">
+                                                            <li
+                                                                class="pb-child pb_none d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-eye"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="fas fa-link"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-heart"></i>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-detail text-center w-100">
+                                            <a class="p-title" href="#">
+                                                <h2>Ultra Rich Coffee Powder</h2>
+                                            </a>
+
+                                            <div
+                                                class="product-center d-flex justify-content-between align-items-center w-100">
+                                                <div class="product-left">
+                                                    <span>£238.37</span>
+                                                </div>
+
+                                                <div class="shop-side text-center">
+                                                    <a class="add-to-card d-flex justify-content-center align-items-center"
+                                                        title="Add to Card">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="item">
+                                    <div class="shop-image d-flex flex-column w-100">
+                                        <div class="reveal-side">
+                                            <a href="#">
+                                                <div class="reveal d-flex">
+                                                    <img src="/src/static/assets/product-9_9.jpg" alt="coffee">
+                                                    <img class="reveal-img" src="/src/static/assets/product-7_7.jpg"
+                                                        alt="coffee">
+                                                </div>
+
+                                                <div
+                                                    class="img-wrapper d-flex justify-content-end align-items-end w-100">
+                                                    <div class="product-button">
+                                                        <ul class="pb-parent">
+                                                            <li
+                                                                class="pb-child pb_none d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-eye"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="fas fa-link"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-heart"></i>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-detail text-center w-100">
+                                            <a class="p-title" href="#">
+                                                <h2>Rofum Roaster Coffee</h2>
+                                            </a>
+
+                                            <div
+                                                class="product-center d-flex justify-content-between align-items-center w-100">
+                                                <div class="product-left">
+                                                    <span>£238.37</span>
+                                                </div>
+
+                                                <div class="shop-side text-center">
+                                                    <a class="add-to-card d-flex justify-content-center align-items-center"
+                                                        title="Add to Card">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="shop-image d-flex flex-column w-100">
+                                        <div class="reveal-side">
+                                            <a href="#">
+                                                <div class="reveal d-flex">
+                                                    <img src="/src/static/assets/product-11_11.webp" alt="coffee">
+                                                    <img class="reveal-img" src="/src/static/assets/product-6.jpg"
+                                                        alt="coffee">
+                                                </div>
+
+                                                <div
+                                                    class="img-wrapper d-flex justify-content-end align-items-end w-100">
+                                                    <div class="product-button">
+                                                        <ul class="pb-parent">
+                                                            <li
+                                                                class="pb-child pb_none d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-eye"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="fas fa-link"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-heart"></i>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-detail text-center w-100">
+                                            <a class="p-title" href="#">
+                                                <h2>Peaberry Coffee Bean</h2>
+                                            </a>
+
+                                            <div
+                                                class="product-center d-flex justify-content-between align-items-center w-100">
+                                                <div class="product-left">
+                                                    <span>£165.20</span>
+                                                </div>
+
+                                                <div class="shop-side text-center">
+                                                    <a class="add-to-card d-flex justify-content-center align-items-center"
+                                                        title="Add to Card">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="shop-image d-flex flex-column w-100">
+                                        <div class="reveal-side">
+                                            <a href="#">
+                                                <div class="reveal d-flex">
+                                                    <img src="/src/static/assets/product-3_3.jpg" alt="coffee">
+                                                    <img class="reveal-img" src="/src/static/assets/product-13.jpg"
+                                                        alt="coffee">
+                                                </div>
+
+                                                <div
+                                                    class="img-wrapper d-flex justify-content-end align-items-end w-100">
+                                                    <div class="product-button">
+                                                        <ul class="pb-parent">
+                                                            <li
+                                                                class="pb-child pb_none d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-eye"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="fas fa-link"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-heart"></i>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-detail text-center w-100">
+                                            <a class="p-title" href="#">
+                                                <h2>Origin Coffe Bean</h2>
+                                            </a>
+
+                                            <div
+                                                class="product-center d-flex justify-content-between align-items-center w-100">
+                                                <div class="product-left">
+                                                    <span>£595.18</span>
+                                                </div>
+
+                                                <div class="shop-side text-center">
+                                                    <a class="add-to-card d-flex justify-content-center align-items-center"
+                                                        title="Add to Card">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="shop-image d-flex flex-column w-100">
+                                        <div class="reveal-side">
+                                            <a href="#">
+                                                <div class="reveal d-flex">
+                                                    <img src="/src/static/assets/product14_large.jpg" alt="coffee">
+                                                    <img class="reveal-img" src="/src/static/assets/product-4.jpg"
+                                                        alt="coffee">
+                                                </div>
+
+                                                <div
+                                                    class="img-wrapper d-flex justify-content-end align-items-end w-100">
+                                                    <div class="product-button">
+                                                        <ul class="pb-parent">
+                                                            <li
+                                                                class="pb-child pb_none d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-eye"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="fas fa-link"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-heart"></i>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-detail text-center w-100">
+                                            <a class="p-title" href="#">
+                                                <h2>Stabilo Coffee Bean</h2>
+                                            </a>
+
+                                            <div
+                                                class="product-center d-flex justify-content-between align-items-center w-100">
+                                                <div class="product-left">
+                                                    <span>£164.45</span>
+                                                </div>
+
+                                                <div class="shop-side text-center">
+                                                    <a class="add-to-card d-flex justify-content-center align-items-center"
+                                                        title="Add to Card">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="shop-image d-flex flex-column w-100">
+                                        <div class="reveal-side">
+                                            <a href="#">
+                                                <div class="reveal d-flex">
+                                                    <img src="/src/static/assets/product-7_7.jpg" alt="coffee">
+                                                    <img class="reveal-img"
+                                                        src="/src/static/assets/product10_large.webp" alt="coffee">
+                                                </div>
+
+                                                <div
+                                                    class="img-wrapper d-flex justify-content-end align-items-end w-100">
+                                                    <div class="product-button">
+                                                        <ul class="pb-parent">
+                                                            <li
+                                                                class="pb-child pb_none d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-eye"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="fas fa-link"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-heart"></i>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-detail text-center w-100">
+                                            <a class="p-title" href="#">
+                                                <h2>Vienna Roaster Coffee</h2>
+                                            </a>
+
+                                            <div
+                                                class="product-center d-flex justify-content-between align-items-center w-100">
+                                                <div class="product-left">
+                                                    <span>£238.37</span>
+                                                </div>
+
+                                                <div class="shop-side text-center">
+                                                    <a class="add-to-card d-flex justify-content-center align-items-center"
+                                                        title="Add to Card">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="item">
+                                    <div class="shop-image d-flex flex-column w-100">
+                                        <div class="reveal-side">
+                                            <a href="#">
+                                                <div class="reveal d-flex">
+                                                    <img src="/src/static/assets/product-17.webp" alt="coffee">
+                                                    <img class="reveal-img" src="/src/static/assets/product-10.jpg"
+                                                        alt="coffee">
+                                                </div>
+
+                                                <div
+                                                    class="img-wrapper d-flex justify-content-end align-items-end w-100">
+                                                    <div class="product-button">
+                                                        <ul class="pb-parent">
+                                                            <li
+                                                                class="pb-child pb_none d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-eye"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="fas fa-link"></i>
+                                                            </li>
+
+                                                            <li
+                                                                class="pb-child d-flex justify-content-center align-items-center">
+                                                                <i class="far fa-heart"></i>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-detail text-center w-100">
+                                            <a class="p-title" href="#">
+                                                <h2>Nuggets Bold Coffee</h2>
+                                            </a>
+
+                                            <div
+                                                class="product-center d-flex justify-content-between align-items-center w-100">
+                                                <div class="product-left">
+                                                    <span>£399.05</span>
+                                                </div>
+
+                                                <div class="shop-side text-center">
+                                                    <a class="add-to-card d-flex justify-content-center align-items-center"
+                                                        title="Add to Card">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>

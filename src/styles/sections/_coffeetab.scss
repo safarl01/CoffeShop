@@ -2,6 +2,8 @@
     padding: 95px 0 65px;
 
     .container {
+        width: 95%;
+
         .row {
             .tab-title {
                 h2 {
@@ -18,6 +20,15 @@
                     color: #473c3c;
                     margin: 0 0 15px 0;
                     width: 40%;
+
+                    @include text-size {
+                        font-size: 15px;
+                        width: 70%;
+                    }
+
+                    @include min-tablet {
+                        width: 100%;
+                    }
                 }
             }
 
@@ -36,10 +47,62 @@
 
                 .tab-content {
                     .owl-c-two {
+                        .item {
+                            border: 2px solid #ffffff;
+                            border-radius: 0px 0px;
+                            box-shadow: 0 0 13px 0px rgba(0, 0, 0, 0.06);
+                            position: relative;
+                            transition: all 0.4s ease-in-out;
+
+                            &:hover {
+                                border: 2px solid #874d34;
+
+                                .p-title {
+                                    h2 {
+                                        color: #514242;
+                                    }
+                                }
+
+                                .product-button {
+                                    opacity: 1 !important;
+                                    visibility: visible !important;
+                                    top: 40% !important;
+                                }
+                            }
+                        }
+
                         .owl-stage-outer {
                             .owl-stage {
                                 display: flex;
                                 flex-wrap: wrap;
+                            }
+                        }
+
+                        .owl-nav {
+                            position: absolute;
+                            top: -75px;
+                            right: 0;
+
+                            @include mobile {
+                                top: -94px;
+                                right: -15px;
+                            }
+
+                            .owl-prev,
+                            .owl-next {
+                                background: none !important;
+                                color: #be9c79;
+                                font-size: 30px;
+                                padding: 4px 3px;
+
+                                &:hover {
+                                    color: #874d34;
+                                }
+
+                                @include mobile {
+                                    font-size: 20px;
+
+                                }
                             }
                         }
                     }

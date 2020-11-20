@@ -15,9 +15,11 @@ body {
     }
 }
 
-.active {
-    span {
-        background: #5e473e !important;
+.owl-dots {
+    .active {
+        span {
+            background: #5e473e !important;
+        }
     }
 }
 
@@ -39,7 +41,8 @@ a {
     }
 }
 
-h2,h3 {
+h2,
+h3 {
     color: #514242;
     letter-spacing: 0.05em;
     margin: 0 0 15px;

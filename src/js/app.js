@@ -166,20 +166,24 @@ $(function () {
   });
   // Owl-Carousel-One End
 
+
   // Owl-Carousel-Two Start
   $('.owl-c-two').owlCarousel({
     loop: false,
     dots: false,
     nav: true,
     margin: 10,
-    // navText: ["<img src='../assets/png/sdsd.png'>", "<img src='../assets/png/dsd.png'>"],
+    navText: ["<i class='fas fa-angle-left'></i>", "<i class='fas fa-angle-right'></i>"],
     responsiveClass: true,
     responsive: {
       0: {
         items: 1,
       },
       600: {
-        items: 1,
+        items: 2,
+      },
+      800: {
+        items: 3,
       },
       1000: {
         items: 4,

@@ -1,10 +1,16 @@
 .our-gallery {
     .container {
         .row {
-            .col-xl-3 {
+            .pad-zero {
                 padding: 0 !important;
 
                 .gallery-side {
+                    overflow: hidden;
+
+                    img{
+                        transition: all .4s ease-in-out;
+                    }
+
                     .gallery-overly {
                         width: 75%;
                         top: 18%;
@@ -61,6 +67,7 @@
 
                         img {
                             filter: blur(3px);
+                            transform: scale(1.1, 1.1);
                         }
 
                         .gallery-overly {
