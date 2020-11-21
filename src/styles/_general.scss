@@ -7,6 +7,25 @@ body {
 // html {
 // }
 
+.owl-carousel {
+    .owl-dots {
+        display: block !important;
+
+        .owl-dot {
+            margin-top: 10px;
+            span {
+                background: #be9c79;
+            }
+
+            &:hover {
+                span {
+                    background: #5e473e !important;
+                }
+            }
+        }
+    }
+}
+
 .nav-tabs {
     .active {
         background: #5e473e !important;
@@ -42,7 +61,8 @@ a {
 }
 
 h2,
-h3 {
+h3,
+h4 {
     color: #514242;
     letter-spacing: 0.05em;
     margin: 0 0 15px;

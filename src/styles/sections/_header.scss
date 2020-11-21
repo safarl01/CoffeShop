@@ -190,7 +190,7 @@
     top: 0;
     z-index: 999;
 
-    @include min-tablet {
+    @include mobile {
         background-color: #271c1b !important;
         position: static;
     }

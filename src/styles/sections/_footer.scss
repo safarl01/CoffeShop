@@ -1,0 +1,136 @@
+footer {
+    .first-side {
+        background-image: url("/src/static/assets/footer-img.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 60px 0px;
+
+        .foot-parent {
+            @include min-tablet {
+                padding-right: 10px;
+                margin-bottom: 30px;
+            }
+
+            .foot-child {
+                color: #ffffff;
+
+                a {
+                    color: #ffffff;
+                    padding: 0 0 5px 0;
+                    display: inline-block;
+                    width: 100%;
+                    transition: all 0.4s ease-in-out;
+
+                    &:hover {
+                        color: #be9c79;
+                    }
+                }
+
+                i {
+                    margin-right: 8px;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+
+    .second-side {
+        background: #f9efd4;
+        padding: 50px 0;
+
+        @include grid {
+            padding: 0 !important;
+        }
+
+        h4 {
+            color: #be9c79;
+            font-size: 20px;
+        }
+
+        .second-parent {
+            .second-child {
+                margin: 0 7px 0 0;
+
+                a {
+                    color: black;
+                    padding: 0;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    border: none;
+                    transition: all 0.4s ease-in-out;
+
+                    &:hover {
+                        color: #be9c79;
+                    }
+                }
+            }
+        }
+
+        .grid-size {
+            @include grid {
+                padding: 20px 0 !important;
+            }
+        }
+    }
+
+    .third-side {
+        background: #271c1b;
+        padding: 20px 2%;
+
+        p {
+            color: white;
+            margin: 0;
+
+            @include min-tablet {
+                font-size: 12px;
+            }
+
+            @include m-none {
+                margin-bottom: 10px;
+                margin-top: 6px;
+                margin-left: -8px;
+            }
+
+            a {
+                cursor: pointer;
+                transition: all 0.4s ease-in-out;
+
+                &:hover {
+                    color: #cf4100;
+                }
+            }
+        }
+
+        .grid_c {
+            @include m-none {
+                justify-content: center !important;
+            }
+        }
+
+        .third-parent {
+
+            @include m-none {
+                justify-content: center !important;
+            }
+
+            li {
+                margin: 0 7px 0 0;
+            }
+
+            a {
+                img {
+                    opacity: .7;
+                    transition: all 0.4s ease-in-out;
+                }
+
+                &:hover {
+                    img {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

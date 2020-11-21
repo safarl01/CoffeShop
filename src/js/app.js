@@ -135,12 +135,12 @@ $(function () {
     if ($(this).scrollTop() > 121) {
       headerLanding.css({
         "position": "fixed",
-        "background": "#301914"
+        "background-color": "#301914"
       })
     } else {
       headerLanding.css({
         "position": "absolute",
-        "background": "transparent"
+        "background-color": "transparent"
       })
     }
   });
@@ -191,5 +191,32 @@ $(function () {
     }
   });
   // Owl-Carousel-Two End
+
+  // Owl-Carousel-Three Start
+  $('.owl-c-three').owlCarousel({
+    loop: false,
+    dots: true,
+    margin: 10,
+    // autoWidth: true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      700: {
+        items: 4,
+      },
+      800: {
+        items: 4,
+      },
+      1000: {
+        items: 5,
+      }
+    }
+  });
+  // Owl-Carousel-Three End
 
 });
