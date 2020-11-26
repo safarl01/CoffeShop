@@ -1,0 +1,67 @@
+// Search
+.serach-m-driver {
+    display: none;
+
+    @include header-tablet {
+        display: block !important;
+    }
+}
+
+// Main Menu
+.main-m-menu {
+    display: none;
+
+    @include header-tablet {
+        display: block !important;
+    }
+}
+
+// Header
+.header_landing {
+    display: none !important;
+
+    @include header-tablet {
+        display: block !important;
+        background-color: #301914 !important;
+    }
+
+    .shopify-section {
+        @include min-tablet {
+            justify-content: center !important;
+        }
+
+        .user {
+            .mega-menu-ch {
+                right: 9.3% !important;
+                top: 10.8% !important;
+
+                @include mobile {
+                    right: 9.3% !important;
+                    top: 12% !important;
+                }
+
+                @include m-none {
+                    right: 35% !important;
+                    top: 23% !important;
+                }
+            }
+        }
+
+        .shopping-basket {
+            .basket-top {
+                top: 10.8% !important;
+                right: 0 !important;
+
+                @include mobile {
+                    right: 9.3% !important;
+                    top: 12% !important;
+                }
+
+                @include m-none {
+                    right: 9.3% !important;
+                    top: 23% !important;
+                }
+            }
+        }
+    }
+}

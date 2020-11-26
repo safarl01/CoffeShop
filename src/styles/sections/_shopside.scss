@@ -1,0 +1,91 @@
+.shop_side {
+    .mini_products_list {
+        padding: 10px 0 0;
+        overflow-y: auto;
+        max-height: 394px;
+
+        .item {
+            background: transparent;
+            padding: 5px 15px 10px 15px !important;
+            margin-bottom: 10px;
+            border-radius: 0;
+            display: inline-block;
+
+            .product_image {
+                line-height: normal;
+                float: left;
+                display: block;
+                margin-right: 15px;
+                margin-left: 0px;
+                padding: 0 !important;
+                width: 70px;
+                height: auto;
+            }
+
+            .product-details {
+                .product-name {
+                    margin: 0;
+
+                    a {
+                        line-height: 1.7;
+                        padding: 0 !important;
+                        font-size: 16px !important;
+                        color: #000000 !important;
+                        transition: all 0.4s ease-in-out;
+
+                        &:hover {
+                            color: #ffb001 !important;
+                        }
+                    }
+                }
+
+                .cart-collateral {
+                    color: #473c3c;
+                }
+            }
+
+            .close {
+                padding-top: 5px;
+                width: 10px;
+                opacity: 1 !important;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .total_side {
+        .total {
+            span {
+                text-transform: uppercase;
+            }
+
+            .price {
+                font-size: 18px;
+                margin-left: 15px;
+                color: #be9c79;
+            }
+        }
+    }
+
+    .shop_button {
+        padding: 0 13px 24px 12px;
+
+        .shop-button {
+            margin: 0;
+
+            a {
+                font-size: 13px !important;
+                padding: 12px 20px !important;
+
+                i {
+                    margin-right: 12px;
+                }
+
+                &:hover {
+                    color: #fff !important;
+                }
+            }
+        }
+    }
+}

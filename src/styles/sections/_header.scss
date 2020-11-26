@@ -1,12 +1,18 @@
 // Search Start
+.search-c-drawer {
+    @include header-tablet {
+        display: none !important;
+    }
+}
+
 .search-drawer {
-    width: 0;
-    height: 0;
+    width: 100vw;
+    height: 100vh;
     background-color: rgba(255, 255, 255, 0.884);
     z-index: 9999;
-    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: all 0.7s;
     right: 0;
-    clip-path: circle(0);
+    clip-path: circle(0px at 100% 0);
 
     .search-bar {
         position: absolute;
@@ -77,6 +83,13 @@
 // Search End
 
 // Main Menu Start
+
+.main-c-menu {
+    @include header-tablet {
+        display: none !important;
+    }
+}
+
 .main-menu {
     width: 337px;
     height: 100vh;
@@ -182,8 +195,20 @@
 
 // Main Menu End
 
-
 // Header Start
+// #header_comp {
+//     @include header-tablet {
+//         display: none !important;
+//         width: 0 !important;
+//     }
+// }
+
+.header_comp {
+    @include header-tablet {
+        display: none !important;
+    }
+}
+
 #header-landing {
     background-color: transparent;
     position: absolute;
@@ -191,12 +216,13 @@
     z-index: 999;
 
     @include mobile {
-        background-color: #271c1b !important;
+        // background-color: #271c1b !important;
         position: static;
     }
 
     .container {
         .row {
+            overflow: hidden;
 
             @include min-tablet {
                 display: flex;
@@ -245,11 +271,11 @@
 
                                 @include max-tablet {
                                     font-size: 14px;
-                                    padding: 24px 15px;
+                                    padding: 24px 14px;
                                 }
 
                                 @include resp-tab {
-                                    padding: 24px 10px;
+                                    padding: 24px 9px;
                                 }
 
                             }
@@ -482,8 +508,8 @@
                             display: block;
                             background: #fff;
                             width: 210px;
-                            right: 0px;
-                            top: 48px;
+                            right: 5%;
+                            top: 10.4%;
                             border: 1px solid transparent;
                             transition: all .4s ease-in-out;
                             visibility: hidden;
@@ -540,16 +566,16 @@
                         .basket-top {
                             width: 350px;
                             padding: 15px 25px;
-                            top: 48px;
-                            right: 0;
+                            top: 10.4%;
+                            right: 5%;
                             box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15);
                             border-radius: 0px;
                             background: #fff;
                             border: 1px solid transparent;
                             transition: all .4s ease-in-out;
-                            visibility: hidden;
-                            opacity: 0;
-                            transform: scaleY(0);
+                            visibility: visible;
+                            opacity: 1;
+                            transform: scaleY(1);
                             transform-origin: 0 0;
                             z-index: 999;
 
@@ -557,9 +583,9 @@
                                 right: -90px;
                             }
 
-                            .no-item {
-                                display: block;
-                            }
+                            // .no-item {
+                            //     display: none !important;
+                            // }
 
                             .has-item {
                                 display: none;
@@ -581,6 +607,14 @@
                                 visibility: visible;
                                 opacity: 1;
                                 transform: scaleY(1);
+                            }
+
+                            .shop_button {
+                                .shop-button {
+                                    a {
+                                        color: #fff !important;
+                                    }
+                                }
                             }
                         }
                     }
