@@ -1,4 +1,11 @@
 .shop_side {
+    display: flex;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fff;
+
     .mini_products_list {
         padding: 10px 0 0;
         overflow-y: auto;

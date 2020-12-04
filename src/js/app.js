@@ -2,6 +2,8 @@
 import 'bootstrap/dist/js/bootstrap';
 import 'owl.carousel2/dist/owl.carousel';
 import './main';
+// import './test';
+
 $(function () {
 
   // $(document).on("click", "#alert", function(){

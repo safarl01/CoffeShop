@@ -1,23 +1,32 @@
 $(function () {
-
-    let itemNull = $(".no-item");
+    let itemNull = $(".basket-top .no-item");
     let itemBlock = $(".basket-top .has-item");
     let productList = $(".mini_products_list");
+    // let product = $(".mini_products_list .item");
     let addToCard = $(".shop-side .add-to-card");
     let productText = $(".product-detail h2");
     let productMoney = $(".product-left span");
     let photos = $(".reveal .images");
-    // let detail = $("#plus");
+    let total = $(".total_side .total .price");
+    // Span value
+    let detail = $(".detail span");
+    let detailPlus = 0;
 
     for (let i = 0; i < addToCard.length; i++) {
         addToCard[i].onclick = function () {
 
+            // Span Value
+            detailPlus += 1;
+            detail.html(detailPlus);
+
+            // Basket css Side
             $(".basket-top").css({
                 "padding": "0"
             });
             itemNull.addClass("shop_none");
             itemBlock.addClass("shop_block");
 
+            // Basket Product Side
             productList.append(`
                 <li class="item float-left d-flex justify-content-around w-100">
                     <a class="product_image" href="#">
@@ -34,7 +43,7 @@ $(function () {
                         <div class="cart-collateral text-left w-100">
                             1 x
                             <span>
-                                ${productMoney[i].innerText}
+                                £${productMoney[i].innerText.slice(1)}
                             </span>
                         </div>
                     </div>
@@ -44,6 +53,9 @@ $(function () {
                     </div>
                 </li>
             `);
+
+            // Cart Total
+            total.html(productMoney[i].innerText);
 
             // Close Button
             let prodDel = $(".item .close i");
@@ -56,22 +68,9 @@ $(function () {
         function prodDelete() {
             $(this).parent().parent().remove();
 
-            // if (productList.value() != null) {
-            //     itemNull.addClass("shop_block");
-            //     itemBlock.removeClass("shop_block");
-
-            //     $(".basket-top").css({
-            //         "padding": "20px 20px"
-            //     });
-
-            // } else {
-            //     itemNull.removeClass("shop_block");
-            //     itemBlock.addClass("shop_block");
-
-            //     $(".basket-top").css({
-            //         "padding": "0"
-            //     });
-            // }
+            // Span Value
+            detailPlus -= 1;
+            detail.html(detailPlus);
         };
     };
 });

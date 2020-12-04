@@ -53,13 +53,26 @@
                 right: 0 !important;
 
                 @include mobile {
+                    right: 7% !important;
+                    top: 11% !important;
+                }
+
+                @include mobile {
                     right: 9.3% !important;
                     top: 12% !important;
                 }
 
                 @include m-none {
-                    right: 9.3% !important;
-                    top: 23% !important;
+                    right: 1% !important;
+                    top: 23.7% !important;
+                }
+
+                .has-item {
+                    .shop_side {
+                        .close {
+                            padding: .4rem 0 0 .5rem;
+                        }
+                    }
                 }
             }
         }
